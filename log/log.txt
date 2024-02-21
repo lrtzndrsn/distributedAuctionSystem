@@ -1,0 +1,189 @@
+REPLICA 1:
+2023/11/27 14:40:30 Hey I'm at port: 5001
+2023/11/27 14:40:30 Listening at: 10.26.40.13:5001
+2023/11/27 14:40:30 Joining in, calling election
+2023/11/27 14:40:30 Election called!
+2023/11/27 14:40:30 No response means I'm the leader muhahaha
+2023/11/27 14:40:30 Telling my subjects I'm the boss around here, subject: 5001
+2023/11/27 14:40:30 Someone thinks they are coordinator, this guy eh: 5001
+2023/11/27 14:40:32 Someone thinks they are coordinator, this guy eh: 5002
+2023/11/27 14:40:34 Someone thinks they are coordinator, this guy eh: 5003
+2023/11/27 14:40:48 The node is not the coordinator (leader) the request is fowarded to the coordinator
+2023/11/27 14:40:48 Server is updating
+2023/11/27 14:40:55 The node is not the coordinator (leader) the request is fowarded to the coordinator
+2023/11/27 14:40:57 The node is not the coordinator (leader) the request is fowarded to the coordinator
+2023/11/27 14:41:00 The node is not the coordinator (leader) the request is fowarded to the coordinator
+2023/11/27 14:41:00 Server is updating
+2023/11/27 14:41:14 The node is not the coordinator (leader) the request is fowarded to the coordinator
+-- CRASH REPLICA 3 --
+2023/11/27 14:41:14 Election called!
+2023/11/27 14:41:14 Someone thinks they are coordinator, this guy eh: 5002
+2023/11/27 14:41:14 ERROR: [core] [Server #1] grpc: server failed to encode response: rpc error: code = Internal desc = grpc: error while marshaling: proto: Marshal called with nil
+2023/11/27 14:41:14 The node is not the coordinator (leader) the request is fowarded to the coordinator
+2023/11/27 14:41:16 The node is not the coordinator (leader) the request is fowarded to the coordinator
+2023/11/27 14:41:20 The node is not the coordinator (leader) the request is fowarded to the coordinator
+2023/11/27 14:41:20 Server is updating
+2023/11/27 14:41:24 The node is not the coordinator (leader) the request is fowarded to the coordinator
+2023/11/27 14:41:26 The node is not the coordinator (leader) the request is fowarded to the coordinator
+2023/11/27 14:41:26 Server is updating
+2023/11/27 14:41:35 The node is not the coordinator (leader) the request is fowarded to the coordinator
+2023/11/27 14:41:35 Server is updating
+2023/11/27 14:41:48 The node is not the coordinator (leader) the request is fowarded to the coordinator
+2023/11/27 14:41:51 The node is not the coordinator (leader) the request is fowarded to the coordinator
+2023/11/27 14:41:51 Server is updating
+2023/11/27 14:41:56 The node is not the coordinator (leader) the request is fowarded to the coordinator
+2023/11/27 14:42:00 The node is not the coordinator (leader) the request is fowarded to the coordinator
+2023/11/27 14:42:00 Server is updating
+2023/11/27 14:42:08 The node is not the coordinator (leader) the request is fowarded to the coordinator
+2023/11/27 14:42:08 Server is updating
+2023/11/27 14:42:18 The node is not the coordinator (leader) the request is fowarded to the coordinator
+2023/11/27 14:42:18 Server is updating
+2023/11/27 14:42:26 The node is not the coordinator (leader) the request is fowarded to the coordinator
+2023/11/27 14:42:26 Server is updating
+2023/11/27 14:42:34 The node is not the coordinator (leader) the request is fowarded to the coordinator
+2023/11/27 14:42:39 Auction over bro
+
+REPLICA 2:
+2023/11/27 14:40:32 Hey I'm at port: 5002
+2023/11/27 14:40:32 Listening at: 10.26.40.13:5002
+2023/11/27 14:40:32 Joining in, calling election
+2023/11/27 14:40:32 Election called!
+2023/11/27 14:40:32 No response means I'm the leader muhahaha
+2023/11/27 14:40:32 Telling my subjects I'm the boss around here, subject: 5002
+2023/11/27 14:40:32 Someone thinks they are coordinator, this guy eh: 5002
+2023/11/27 14:40:32 Telling my subjects I'm the boss around here, subject: 5001
+2023/11/27 14:40:34 Someone thinks they are coordinator, this guy eh: 5003
+2023/11/27 14:40:48 Server is updating
+2023/11/27 14:41:00 Server is updating
+-- CRASH OF REPLICA 3 --
+2023/11/27 14:41:14 Election called!
+2023/11/27 14:41:14 No response means I'm the leader muhahaha
+2023/11/27 14:41:14 Telling my subjects I'm the boss around here, subject: 5002
+2023/11/27 14:41:14 Someone thinks they are coordinator, this guy eh: 5002
+2023/11/27 14:41:14 Telling my subjects I'm the boss around here, subject: 5001
+2023/11/27 14:41:16 Server is coordinator, and recieved bid
+2023/11/27 14:41:16 Recieved invalid bid
+2023/11/27 14:41:20 Server is coordinator, and recieved bid
+2023/11/27 14:41:20 The bidder is not registrered but the bid is valid
+2023/11/27 14:41:20 Updating replicas
+2023/11/27 14:41:20 Made an successful update
+2023/11/27 14:41:26 Server is coordinator, and recieved bid
+2023/11/27 14:41:26 The bidder is not registrered but the bid is valid
+2023/11/27 14:41:26 Updating replicas
+2023/11/27 14:41:26 Made an successful update
+2023/11/27 14:41:35 Server is coordinator, and recieved bid
+2023/11/27 14:41:35 The bidder is already registrered and the bid is valid
+2023/11/27 14:41:35 Updating replicas
+2023/11/27 14:41:35 Made an successful update
+2023/11/27 14:41:51 Server is coordinator, and recieved bid
+2023/11/27 14:41:51 The bidder is already registrered and the bid is valid
+2023/11/27 14:41:51 Updating replicas
+2023/11/27 14:41:51 Made an successful update
+2023/11/27 14:42:00 Server is coordinator, and recieved bid
+2023/11/27 14:42:00 The bidder is already registrered and the bid is valid
+2023/11/27 14:42:00 Updating replicas
+2023/11/27 14:42:00 Made an successful update
+2023/11/27 14:42:08 Server is coordinator, and recieved bid
+2023/11/27 14:42:08 The bidder is already registrered and the bid is valid
+2023/11/27 14:42:08 Updating replicas
+2023/11/27 14:42:08 Made an successful update
+2023/11/27 14:42:18 Server is coordinator, and recieved bid
+2023/11/27 14:42:18 The bidder is already registrered and the bid is valid
+2023/11/27 14:42:18 Updating replicas
+2023/11/27 14:42:18 Made an successful update
+2023/11/27 14:42:26 Server is coordinator, and recieved bid
+2023/11/27 14:42:26 The bidder is already registrered and the bid is valid
+2023/11/27 14:42:26 Updating replicas
+2023/11/27 14:42:26 Made an successful update
+
+REPLICA 3:
+2023/11/27 14:40:34 Hey I'm at port: 5003
+2023/11/27 14:40:34 Listening at: 10.26.40.13:5003
+2023/11/27 14:40:34 Joining in, calling election
+2023/11/27 14:40:34 Election called!
+2023/11/27 14:40:34 No response means I'm the leader muhahaha
+2023/11/27 14:40:34 Telling my subjects I'm the boss around here, subject: 5003
+2023/11/27 14:40:34 Someone thinks they are coordinator, this guy eh: 5003
+2023/11/27 14:40:34 Telling my subjects I'm the boss around here, subject: 5002
+2023/11/27 14:40:34 Telling my subjects I'm the boss around here, subject: 5001
+2023/11/27 14:40:48 Auction started, ending 2023-11-27 14:42:28 +0100 CET
+2023/11/27 14:40:48 Server is coordinator, and recieved bid
+2023/11/27 14:40:48 The bidder is not registrered but the bid is valid
+2023/11/27 14:40:48 Updating replicas
+2023/11/27 14:40:48 Made an successful update
+2023/11/27 14:40:48 Made an successful update
+2023/11/27 14:40:57 Server is coordinator, and recieved bid
+2023/11/27 14:40:57 Recieved invalid bid
+2023/11/27 14:41:00 Server is coordinator, and recieved bid
+2023/11/27 14:41:00 The bidder is not registrered but the bid is valid
+2023/11/27 14:41:00 Updating replicas
+2023/11/27 14:41:00 Made an successful update
+2023/11/27 14:41:00 Made an successful update
+-- CRASH OF REPLICA 3 --
+
+CLIENT 1:
+2023/11/27 14:40:47 Trying at port: 5001
+2023/11/27 14:40:47 Someone at port: 5001
+2023/11/27 14:40:47 Connected to the server at 10.26.40.13:5001
+2023/11/27 14:40:47 Ready to take bid:
+100
+2023/11/27 14:40:48 The bid of 100 was successfull
+result
+-- CRASH OF REPLICA 3 --
+2023/11/27 14:41:14 Trying at port: 5001
+2023/11/27 14:41:14 Someone at port: 5001
+2023/11/27 14:41:14 Connected to the server at 10.26.40.13:5001
+2023/11/27 14:41:14 Highest bid: 150 
+ Highest bidder is: 715375792113804079 
+ Is it me? false
+150
+2023/11/27 14:41:16 The bid of 150 was not successfull, due to invalid bid
+200
+2023/11/27 14:41:20 The bid of 200 was successfull
+450
+2023/11/27 14:41:35 The bid of 450 was successfull
+result
+2023/11/27 14:41:56 Highest bid: 500 
+ Highest bidder is: 715375792113804079 
+ Is it me? false
+550
+2023/11/27 14:42:00 The bid of 550 was successfull
+700
+2023/11/27 14:42:18 The bid of 700 was successfull
+result
+2023/11/27 14:42:34 Highest bid: 800 
+ Highest bidder is: 715375792113804079 
+ Is it me? false
+900
+2023/11/27 14:42:39 The bid of 900 was not successfull, due to invalid bid
+
+CLIENT 2:
+2023/11/27 14:40:51 Trying at port: 5001
+2023/11/27 14:40:51 Someone at port: 5001
+2023/11/27 14:40:51 Connected to the server at 10.26.40.13:5001
+2023/11/27 14:40:51 Ready to take bid:
+result
+2023/11/27 14:40:55 Highest bid: 100 
+ Highest bidder is: 748604088780602585 
+ Is it me? false
+100
+2023/11/27 14:40:57 The bid of 100 was not successfull, due to invalid bid
+150
+2023/11/27 14:41:00 The bid of 150 was successfull
+result
+-- CRASH OF REPLICA 3 --
+2023/11/27 14:41:24 Highest bid: 200 
+ Highest bidder is: 748604088780602585 
+ Is it me? false
+400
+2023/11/27 14:41:26 The bid of 400 was successfull
+result
+2023/11/27 14:41:48 Highest bid: 450 
+ Highest bidder is: 748604088780602585 
+ Is it me? false
+500
+2023/11/27 14:41:51 The bid of 500 was successfull
+600
+2023/11/27 14:42:08 The bid of 600 was successfull
+800
+2023/11/27 14:42:26 The bid of 800 was successfull
