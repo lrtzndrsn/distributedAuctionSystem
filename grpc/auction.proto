@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+package auction;
+
+option go_package = "grpc/auction";
+
+message CallElectionMessage {
+    
+}
+
+message CallElectionResponseMessage {
+
+}
+
+message AssertCoordinatorMessage {
+    string port = 1;
+}
+
+message AssertCoordinatorResponseMessage {
+    string port = 1;
+}
+
+message SendBidMessage {
+    int64 unique_identifier = 1;
+    int64 bid = 2;
+    bool from_coordinator = 3;
+    int64 end_time = 4;
+    bool is_first_bid = 5;
+}
+
+message ResponseBidMessage {
+    string status = 1;
+}
+
+message RequestResultMessage {
+
+}
+
+message ResultResponseMessage {
+    int64 result = 1;
+    int64 current_highest_bidder = 2;
+}
+
+
+
+service Auction {
+    rpc Bid(SendBidMessage) returns (ResponseBidMessage);
+    rpc Result(RequestResultMessage) returns (ResultResponseMessage);
+    rpc CallElection(CallElectionMessage) returns (CallElectionResponseMessage);
+    rpc AssertCoordinator(AssertCoordinatorMessage) returns (AssertCoordinatorResponseMessage);
+}
